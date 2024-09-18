@@ -3,7 +3,7 @@ import type { CookieOptions } from 'express';
 
 export const accessTokenOptions: CookieOptions = {
   httpOnly: true,
-  sameSite: 'lax',
+  sameSite: 'none',
   secure: true,
 };
 
