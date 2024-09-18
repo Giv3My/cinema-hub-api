@@ -9,7 +9,7 @@ async function bootstrap() {
 
   app.setGlobalPrefix('/api');
   app.enableCors({
-    origin: [process.env.APP_URL],
+    origin: [process.env.APP_URL, 'http://localhost:3000'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
