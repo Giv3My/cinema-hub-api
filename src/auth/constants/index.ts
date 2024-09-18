@@ -3,11 +3,12 @@ import type { CookieOptions } from 'express';
 
 export const accessTokenOptions: CookieOptions = {
   httpOnly: true,
-  sameSite: 'none',
   secure: true,
+  sameSite: 'none',
+  maxAge: ms('7d'),
 };
 
 export const refreshTokenOptions: CookieOptions = {
   ...accessTokenOptions,
-  maxAge: ms('7d'),
+  // maxAge: ms('7d'),
 };
