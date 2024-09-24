@@ -334,7 +334,7 @@ export const movies = [
     slug: 'dzhon-uik',
     poster: '/uploads/movies/john-wick.jpg',
     bigPoster: '/uploads/movies/big-john-wick.jpg',
-    videoUrl: '/uploads/videos/john-wick.mp4',
+    videoUrl: '/uploads/movies/john-wick.mp4',
     country: 'США',
     year: 2023,
     duration: 180,
